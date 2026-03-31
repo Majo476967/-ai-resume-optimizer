@@ -8,13 +8,13 @@ def parse_jd(text):
     解析岗位描述（JD）
     """
 
-    #  构造Prompt（让模型知道要干嘛）
+    #  构造Prompt
     prompt = parse_jd_prompt(text)
 
     #  调用LLM
     result = call_llm(prompt)
 
-    #  打印原始结果（调试用）
+    #  打印原始结果
     print("JD LLM原始输出：", result)
 
     #  尝试解析JSON

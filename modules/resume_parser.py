@@ -9,7 +9,7 @@ def parse_resume(text):
     # 2. 调用LLM
     result = call_llm(prompt)
 
-    print("LLM原始输出：", result)  # 👉 调试用（很重要）
+    print("LLM原始输出：", result)  # 调试用
 
     # 3. 解析JSON
     try:

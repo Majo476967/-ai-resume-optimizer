@@ -19,7 +19,7 @@ def optimize_resume(resume_text, jd_data, analysis_data):
         samples
     )
 
-    # 3️⃣ 调用LLM
+    #   调用LLM
     result = call_llm(prompt)
 
     print("优化模块（RAG）LLM原始输出：\n", result)
